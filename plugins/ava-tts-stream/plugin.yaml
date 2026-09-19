@@ -1,0 +1,4 @@
+name: ava-tts-stream
+version: 1.0.0
+description: "Registers the local Qwen3-TTS voice (qwentts.cpp on LOQ-AUTONOMY, port 8891) as a Hermes streaming TTS provider so desktop voice conversation speaks sentence-by-sentence while the model is still generating. Pitch-preserving atempo speed via ffmpeg pipe."
+author: Ava

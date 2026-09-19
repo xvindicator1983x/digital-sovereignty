@@ -166,7 +166,7 @@ Type=simple
 ExecStart=/usr/bin/python3 /opt/ollama-shim/shim.py
 Restart=always
 RestartSec=5
-User=diemos
+User=your_username
 Environment="PYTHONUNBUFFERED=1"
 
 [Install]
