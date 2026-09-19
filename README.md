@@ -5,7 +5,6 @@ A collection of manifests, guides, and tools for personal digital autonomy — s
 ## Contents
 
 - **[The Message](manifesto-public.pdf)** — A two-page leaflet on waking up to the surveillance machine and reclaiming your digital life. Signed by *One Who Woke Up*.
-- **[Manifesto (Private)](Manifesto.md)** — The full, unredacted manifesto: "The Reckoning." First-person account of the journey from corporate employee to digital sovereign.
 - **Guides** — Practical how-tos for building your own self-hosted stack.
 
 ## Philosophy
