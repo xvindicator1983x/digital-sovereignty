@@ -28,6 +28,10 @@
 
 A single Python file with zero dependencies beyond the standard library. It listens on port 11434 (Ollama's default), translates requests to OpenAI format, forwards them to your Unsloth instance, and translates responses back.
 
+Download the standalone shim: [`shim/ollama-shim.py`](../shim/ollama-shim.py)
+
+Or copy from below:
+
 ```python
 #!/usr/bin/env python3
 """
