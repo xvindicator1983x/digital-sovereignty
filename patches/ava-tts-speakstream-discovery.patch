@@ -1,0 +1,15 @@
+diff --git a/hermes_cli/web_routers/audio.py b/hermes_cli/web_routers/audio.py
+index 340114d75e..61916186e7 100644
+--- a/hermes_cli/web_routers/audio.py
++++ b/hermes_cli/web_routers/audio.py
+@@ -507,6 +507,10 @@ async def speak_stream_ws(ws: "WebSocket") -> None:
+     loop = asyncio.get_running_loop()
+ 
+     def _resolve():
++        # Plugin-discovered streamers (e.g. the local 'ava' voice) are not registered until
++        # discovery runs; without this a custom provider falls back to whole-reply playback.
++        from hermes_cli.plugins import discover_plugins
++        discover_plugins(force=True)
+         from tools.tts_streaming import resolve_streaming_provider
+         from tools.tts_tool import _get_provider, _load_tts_config, _resolve_max_text_length
+         with _config_profile_scope(profile):
